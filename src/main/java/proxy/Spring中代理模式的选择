@@ -1,0 +1,9 @@
+Spring利用动态代理实现AOP有两个非常重要的类
+1.jdkDynamicAopProxy
+2.CglibAopProxy
+
+Spring中的代理选择原则
+1.当Bean有实现接口时，Spring会选择JDK动态代理
+2.当Bean没有实现接口时，Spring会选择CGLib代理
+3.Spring可以通过配置文件强制使用CGLib代理
+ <aop:aspectj-autoproxy proxy-target-class="true">
