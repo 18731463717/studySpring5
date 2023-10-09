@@ -1,0 +1,13 @@
+优点：
+1.在观察者和被观察者之间建立了一个抽象的耦合
+2.观察者模式支持广播通信
+缺点：
+1.观察者之间有过多的细节依赖，时间消耗多，程序复杂性高
+2.使用不当会出现循环调用
+
+可以使用Guava API 轻松实现观察者模式
+    <dependency>
+       <groupId>com.google.guava</groupId>
+       <artifactId>guava</artifactId>
+       <version>29.0-jre</version>
+    </dependency>
